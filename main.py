@@ -1,10 +1,10 @@
 import numpy as np
-# Commit 3: 1 line
+# Commit 7: 1 line
 def getMatrix():
 	matrix = []
     # Commit 1: 1 line # Commit 5: 1 line
     # Commit 1: 2 line
-    # Commit 3: 2 line
+    # Commit 3: 2 line # Commit 7: 2 line
 	try:
 		''' Размеры матрицы '''
 		rows = int(input("Введите число строк в матрице: "))
@@ -47,7 +47,7 @@ def waldCriterion(matrix, matrixType):
 	if(matrixType == 1):
 		maxValues = np.max(matrix, axis=0)
 		waldValue = np.min(maxValues)
-  
+    # Commit 7: 3 line
 	if(matrixType == 2):
 		minValues = np.min(matrix, axis=0)
 		waldValue = np.max(minValues)
