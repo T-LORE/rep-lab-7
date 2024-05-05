@@ -1,9 +1,10 @@
 import numpy as np
-
+# Commit 3: 1 line
 def getMatrix():
 	matrix = []
     # Commit 1: 1 line
     # Commit 1: 2 line
+    # Commit 3: 2 line
 	try:
 		''' Размеры матрицы '''
 		rows = int(input("Введите число строк в матрице: "))
@@ -41,7 +42,7 @@ def getRiskMatrix(matrix):
    
 	# Commit 1: 4 line
 	return np.transpose(riskMatrix)
-   
+    # Commit 3: 3 line
 def waldCriterion(matrix, matrixType):
 	if(matrixType == 1):
 		maxValues = np.max(matrix, axis=0)
