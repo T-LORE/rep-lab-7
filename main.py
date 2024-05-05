@@ -60,14 +60,14 @@ def savageCriterion(riskMatrix):
     # Commit 2: 2 line
     # Commit 2: 3 line
 	return savageValue
-
+    # Commit 6: 1 line
 def hurwitczCriterion(matrix, matrixType, prob):
 	if(matrixType == 1):
 		hurwitczValue = np.max(prob*np.min(matrix, axis=1) + (1-prob)*np.max(matrix, axis=1))
-  
+    # Commit 6: 2 line
 	if(matrixType == 2):
 		hurwitczValue = np.min(prob*np.max(matrix, axis=1) + (1-prob)*np.min(matrix, axis=1))
-  
+    # Commit 6: 3 line
 	return hurwitczValue
 
 ''' Получить данные от пользователя '''
