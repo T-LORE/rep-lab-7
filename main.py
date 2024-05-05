@@ -88,9 +88,11 @@ if(prob < 0 or prob > 1):
 ''' Матрица рисков '''
 riskMatrix = getRiskMatrix(matrix)
 print(f"\n\nРезультаты вычислений:\nМатрица рисков:\n{riskMatrix}")
-
+# Commit 8: 1 line
 ''' Критерий Вальда '''
+# Commit 8: 2 line
 waldValue = waldCriterion(matrix, matrixType)
+# Commit 8: 3 line
 print(f"\nКритерий Вальда: {waldValue}")
 
 ''' Критерий Сэвиджа '''
