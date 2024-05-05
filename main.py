@@ -6,12 +6,13 @@ def getMatrix():
     # Commit 1: 2 line
     # Commit 3: 2 line # Commit 7: 2 line
 	try:
+    # Commit 10: 1 line
 		''' Размеры матрицы '''
 		rows = int(input("Введите число строк в матрице: "))
 		cols = int(input("Введите число столбцов в матрице: "))
 		if(rows <= 0 or cols <= 0):
 			raise ValueError("Неверные размеры матрицы.")
-
+    # Commit 10: 2 line
 		''' Значения матрицы '''
 		print("Введите элементы матрицы по одному, разделяя их пробелом")
 		for i in range(rows):
@@ -30,7 +31,7 @@ def getMatrix():
     # Commit 1: 3 line
 def getRiskMatrix(matrix):
 	riskMatrix = []
-
+    # Commit 10: 3 line
 	for j in range(len(matrix[0])):  # Перебираем столбцы матрицы
 			beta = max(matrix[i][j] for i in range(len(matrix)))  # Максимальное значение в столбце
 			# if beta >= 0:  # Если это выигрыш
