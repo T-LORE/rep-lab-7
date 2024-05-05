@@ -2,7 +2,7 @@ import numpy as np
 # Commit 3: 1 line
 def getMatrix():
 	matrix = []
-    # Commit 1: 1 line
+    # Commit 1: 1 line # Commit 5: 1 line
     # Commit 1: 2 line
     # Commit 3: 2 line
 	try:
@@ -25,7 +25,7 @@ def getMatrix():
 
 	except ValueError as exception:
 			print(f"Ошибка: {exception}")
-
+    # Commit 5: 2 line
 	return matrix
     # Commit 1: 3 line
 def getRiskMatrix(matrix):
@@ -40,7 +40,7 @@ def getRiskMatrix(matrix):
 			# 		risk_col = [matrix[i][j] - beta for i in range(len(matrix))]
 			riskMatrix.append(risk_col)
    
-	# Commit 1: 4 line
+	# Commit 5: 3 line
 	return np.transpose(riskMatrix)
     # Commit 3: 3 line
 def waldCriterion(matrix, matrixType):
