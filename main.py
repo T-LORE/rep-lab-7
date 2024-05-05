@@ -2,7 +2,8 @@ import numpy as np
 
 def getMatrix():
 	matrix = []
- 
+    # Commit 1: 1 line
+    # Commit 1: 2 line
 	try:
 		''' Размеры матрицы '''
 		rows = int(input("Введите число строк в матрице: "))
@@ -25,7 +26,7 @@ def getMatrix():
 			print(f"Ошибка: {exception}")
 
 	return matrix
-
+    # Commit 1: 3 line
 def getRiskMatrix(matrix):
 	riskMatrix = []
 
@@ -38,7 +39,7 @@ def getRiskMatrix(matrix):
 			# 		risk_col = [matrix[i][j] - beta for i in range(len(matrix))]
 			riskMatrix.append(risk_col)
    
-	
+	# Commit 1: 4 line
 	return np.transpose(riskMatrix)
    
 def waldCriterion(matrix, matrixType):
