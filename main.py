@@ -72,17 +72,18 @@ def hurwitczCriterion(matrix, matrixType, prob):
 
 ''' Получить данные от пользователя '''
 ''' Тип матрицы '''
+# Commit 4: 1 line
 print("Что у вас за матрица?")
 matrixType = int(input("1 - матрица выигрышей\n2 - матрица потерь (затрат)\n"))
 
 ''' Сама матрица '''
 matrix = np.array(getMatrix())
-
+# Commit 4: 2 line
 ''' Степень пессимизма для критерия Гурвица '''
 prob = float(input("Введите степень пессимизма для критерия Гурвица: "))
 if(prob < 0 or prob > 1): 
   raise ValueError("Степень пессимизма должна находиться в диапазоне (0;1)")
-
+# Commit 4: 3 line
 ''' Вычисления '''
 ''' Матрица рисков '''
 riskMatrix = getRiskMatrix(matrix)
