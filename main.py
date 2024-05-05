@@ -98,7 +98,9 @@ print(f"\nКритерий Вальда: {waldValue}")
 ''' Критерий Сэвиджа '''
 savageValue = savageCriterion(riskMatrix)
 print(f"\nКритерий Сэвиджа: {savageValue}")
-
+# Commit 9: 1 line
 ''' Критерий Гурвица '''
+# Commit 9: 2 line
 hurwitczValue = hurwitczCriterion(matrix, matrixType, prob)
 print(f"\nКритерий Гурвица: {hurwitczValue}")
+# Commit 9: 3 line
