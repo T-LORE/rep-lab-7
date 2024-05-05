@@ -50,13 +50,14 @@ def waldCriterion(matrix, matrixType):
 	if(matrixType == 2):
 		minValues = np.min(matrix, axis=0)
 		waldValue = np.max(minValues)
-
+    # Commit 2: 1 line
 	return waldValue
 
 def savageCriterion(riskMatrix):
 	maxValues = np.max(riskMatrix, axis=1)
 	savageValue = np.min(maxValues)
-
+    # Commit 2: 2 line
+    # Commit 2: 3 line
 	return savageValue
 
 def hurwitczCriterion(matrix, matrixType, prob):
